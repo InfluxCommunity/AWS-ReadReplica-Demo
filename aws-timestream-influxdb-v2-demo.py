@@ -7,11 +7,11 @@ import threading
 import socket
 
 # Configuration AWS TimeStream for InfluxDB
-PRIMARY_URL = "https://a45ovgopim-gyeutrllsgjjii.timestream-influxdb.us-east-1.on.aws:8086"  # Primary InfluxDB Instance
-REPLICA_URL = "https://52k8sqmsh1-gyeutrllsgjjii.timestream-influxdb.us-east-1.on.aws:8086"  # InfluxDB Replica Instance
-INFLUXDB_TOKEN = "7mswkRcDaCQsF2ebYrJZL1Zb3sokETIUlkh_7Q-UFHVTT9mZrBbYAYYM0gYi3UhQZ8ZsOkOwGyKUpMUcTzzGkw==" # Same API Token for both primary and replica
-ORG = "DevRel" # Same organization name for both primary and replica
-BUCKET = "system_metrics" # Same bucket name for both primary and replica
+PRIMARY_URL = ""  # Primary InfluxDB Instance
+REPLICA_URL = ""  # InfluxDB Replica Instance
+INFLUXDB_TOKEN = "" # Same API Token for both primary and replica
+ORG = "" # Same organization name for both primary and replica
+BUCKET = "" # Same bucket name for both primary and replica
 
 def collect_system_metrics():
     """Collect real system metrics using psutil"""
